@@ -1,7 +1,17 @@
 aid: alkymi
 name: Alkymi
-description: Alkymi is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Alkymi is an enterprise AI platform for private markets data that uses secure
+  large language models to extract and transform unstructured investment and
+  financial documents into standardized, actionable datasets. The platform
+  ingests capital notices, quarterly reports, financial statements, CIMs, loan
+  agreements, and brokerage statements, then delivers structured data to
+  downstream systems in real time. Product lines include Alkymi Alts,
+  Alkymi Private Credit, Data Inbox, and Patterns. Alkymi exposes a
+  developer-friendly REST API with event-based webhook support, email
+  integrations, and user-triggered import/export, and integrates with SimCorp,
+  Snowflake, Salesforce, FINBOURNE, Zapier, and Groq. It is backed by
+  Canaan Partners.
 url: https://raw.githubusercontent.com/api-evangelist/alkymi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +19,79 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://alkymi-website.transforms.svdcdn.com/production/New-Social-Sharing-SEO-1x.png?w=1400&h=1400&auto=compress%2Cformat&fit=clip&dm=1724087718&s=c3c96d6bcdb8e45cae1dd3dcb3f2975a
 tags:
 - Company
-apis: []
+- Financial Services
+- Private Markets
+- Document Processing
+- Data Extraction
+- Artificial Intelligence
+- Alternative Investments
+- Webhooks
+apis:
+- name: Alkymi REST API
+  description: >-
+    Alkymi exposes a developer-friendly REST API with full event-based webhook
+    support for ingesting, transforming, and delivering extracted private markets
+    data. API access and reference documentation are provisioned to enterprise
+    customers; no public base URL or OpenAPI definition is published.
+  humanURL: https://www.alkymi.io/enterprise-platform/connections
+  properties:
+  - type: Webhooks
+    url: asyncapi/alkymi-webhooks.yml
+common:
+- type: Website
+  url: https://www.alkymi.io
+- type: DeveloperPortal
+  url: https://docs.alkymi.io
+- type: Documentation
+  url: https://docs.alkymi.io
+- type: Blog
+  url: https://www.alkymi.io/resources/blog
+- type: Security
+  url: https://www.alkymi.io/enterprise-platform/security
+- type: Compliance
+  url: https://www.alkymi.io/enterprise-platform/security
+- type: TrustCenter
+  url: security/alkymi-trust-center.yml
+- type: Conformance
+  url: conformance/alkymi-conformance.yml
+- type: DomainSecurity
+  url: security/alkymi-domain-security.yml
+- type: Webhooks
+  url: asyncapi/alkymi-webhooks.yml
+- type: SignUp
+  url: https://app.alkymi.io
+- type: Login
+  url: https://app.alkymi.io
+- type: Support
+  url: https://www.alkymi.io/contact
+- type: TermsOfService
+  url: https://www.alkymi.io/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.alkymi.io/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

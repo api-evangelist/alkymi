@@ -1,0 +1,30 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alkymi.io/enterprise-platform/security
+probe: false
+url: https://www.alkymi.io/enterprise-platform/security
+note: >-
+  Alkymi publishes its security and compliance posture on its enterprise
+  security page rather than a dedicated trust.<domain> portal (trust.alkymi.io
+  returns 404). Certifications below are named on that page.
+certifications:
+- SOC 2 Type 2
+- ISO 27001
+- GDPR
+program:
+  soc2: Annual SOC 2 Type 2 examination
+  iso27001: Tier IV SOC 2 and ISO 27001 compliant data centers
+  penetration_testing: Annual third-party penetration testing
+  code_analysis: Static and dynamic code analysis
+  monitoring: 24/7 automated runtime infrastructure monitoring and alerting
+  risk_assessment: Annual risk assessments
+data_protection:
+  in_transit: TLS encryption
+  at_rest: AES-256 encryption
+  backups: Encrypted and continuous
+llm_data_handling: >-
+  Customer data sent to third-party LLM services is isolated, encrypted at rest
+  and in transit, and not used to train third-party models.
+evidence:
+- source: https://www.alkymi.io/enterprise-platform/security
+  keywords: [soc 2 type 2, iso 27001, gdpr, penetration testing, aes 256, tls]

@@ -1,0 +1,15 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alkymi.io/enterprise-platform/connections
+spec_type: Webhooks
+note: >-
+  Alkymi advertises a "developer-friendly REST API, with full event-based
+  webhook support" on its connections page. No public webhook event catalog or
+  AsyncAPI document is published; event names and payload schemas are provisioned
+  to enterprise customers via gated docs (docs.alkymi.io). This artifact records
+  the advertised event surface only — no events are fabricated.
+webhooks:
+  advertised: true
+  style: event-based
+  docs: https://docs.alkymi.io
+  events: []
